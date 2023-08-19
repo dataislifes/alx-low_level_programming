@@ -10,17 +10,25 @@
  */
 
 int main(void)
+
 {
 	int i, e;
 
-	for (i = 48; 48 < 58; i++)
+	i = 48;
+	e = 48;
+
+	while (e < 58)
+
 	{
-		for (e = 48; 48 < 58; e++)
+		i = 48;
+
+		while (i < 58)
+
 		{
-			if (i < e && i != e)
+			if (e != i && e < i)
 			{
-				putchar(i);
 				putchar(e);
+				putchar(i);
 				if (i == 57 && e == 56)
 				{
 					break;
@@ -28,8 +36,10 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
+			i++;
 		}
+		e++;
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
