@@ -7,8 +7,11 @@
  * * The variable n will store a different value every time
  * * Return: 0 if successful
  */
+
 int main(void)
+
 {
+
 	int n;
 
 	srand(time(0));
